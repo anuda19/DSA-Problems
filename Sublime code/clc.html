@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+ <meta charset="utf-8">
+ <title> Simple Calculator using HTML, CSS and JavaScript </title>
+ 
+</head>
+<body>
+<table class = "calculator" >
+ <tr>
+ <td colspan = "3"> <input class = "display-box" type = "text" id = "result" > </td>
+
+
+ <!-- clearScreen() function clear all the values -->
+
+
+ <td> <input class = "button" type = "button" value = "C" onclick = "clr()" style = "background-color: #fb0066;" > </td>
+ </tr>
+ <tr>
+
+ <!-- display() function display the value of clicked button -->
+ <td> <input class = "button" type = "button" value = "1" onclick = "view('1')" > </td>
+ <td> <input class = "button" type = "button" value = "2" onclick = "view('2')" > </td>
+ <td> <input class = "button" type = "button" value = "3" onclick = "view('3')" > </td>
+ <td> <input class = "button" type = "button" value = "/" onclick = "view('/')" > </td>
+ </tr>
+ <tr>
+ <td> <input class = "button" type = "button" value = "4" onclick = "view('4')" > </td>
+ <td> <input class = "button" type = "button" value = "5" onclick = "view('5')" > </td>
+ <td> <input class = "button" type = "button" value = "6" onclick = "view('6')" > </td>
+ <td> <input class = "button" type = "button" value = "-" onclick = "view('-')" > </td>
+ </tr>
+ <tr>
+ <td> <input class = "button" type = "button" value = "7" onclick = "view('7')" > </td>
+ <td> <input class = "button" type = "button" value = "8" onclick = "view('8')" > </td>
+ <td> <input class = "button" type = "button" value = "9" onclick = "view('9')" > </td>
+ <td> <input class = "button" type = "button" value = "+" onclick = "view('+')" > </td>
+ </tr>
+ <tr>
+ <td> <input class = "button" type = "button" value = "." onclick = "view('.')" > </td>
+ <td> <input class = "button" type = "button" value = "0" onclick = "view('0')" > </td>
+ <!-- calculate() function evaluate the mathematical expression -->
+ <td> <input class = "button" type = "button" value = "=" onclick ="compute()" style = "background-color: #fb0066;" > </td>
+ <td> <input class = "button" type = "button" value = "x" onclick = "view('*')" > </td>
+ </tr>
+ </table>
+    <script> 
+
+        function view(num) {
+                document.getElementById("result").value+=num
+                }
+
+        function compute() {
+                let x = document.getElementById("result").value
+                let y = eval(x)
+                document.getElementById("result").value = y
+                }
+                
+                function clr() {
+                    document.getElementById("result").value = ""
+                }
+     </script>
+    </body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+</head>
+<body>
+	<center>
+		<table boder = "1">
+			<tr> 
+				<td colnspan="3"><input type="text" id="result"/> </td>
+				<td> <input type="button" value="c" onclick="clr()"/></td> 
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="get('1')"/></td>
+				<td><input type="button" value="2" onclick="get('2')"/></td>
+				<td><input type="button" value="3" onclick="get('3')"/></td>
+				<td><input type="button" value="/" onclick="get('/')"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="get('1')"/></td>
+				<td><input type="button" value="5" onclick="get('2')"/></td>
+				<td><input type="button" value="6" onclick="get('3')"/></td>
+				<td><input type="button" value="+" onclick="get('+')"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="get('1')"/></td>
+				<td><input type="button" value="8" onclick="get('2')"/></td>
+				<td><input type="button" value="9" onclick="get('3')"/></td>
+				<td><input type="button" value="-" onclick="get('-')"/></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="." onclick="get('.')"/></td>
+				<td><input type="button" value="0" onclick="get('0')"/></td>
+				<td><input type="button" value="=" onclick="compute()"/></td>
+				<td><input type="button" value="x" onclick="get('*')"/></td>
+			</tr>
+		</center>
+
+		 <script> 
+
+        function get(num) {
+                document.getElementById("result").value+=num
+                }
+
+        function compute() {
+                let x = document.getElementById("result").value
+                let y = eval(x)
+                document.getElementById("result").value = y
+                }
+                
+                function clr() {
+                    document.getElementById("result").value = ""
+                }
+     </script>
+</body>
+</html>

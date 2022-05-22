@@ -1,0 +1,14 @@
+.head{
+    text-align: center;
+}
+body{
+    background-color: greenyellow;
+}
+.btn{
+    color: blue;
+    background-color: greenyellow;
+}
+h4{
+    margin: 6px;
+}
+

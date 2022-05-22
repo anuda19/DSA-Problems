@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+// Iterative Javascript program to count
+// number of digits in a number
+
+function countDigit(n)
+{
+   let count = 0;
+   while (n != 0)
+   {
+      n = Math.floor(n / 10);
+      ++count;
+   }
+   return count;
+}
+
+// Driver code
+
+   n = 345289467;
+   document.write("Number of digits : "+ countDigit(n));
+   
+// This code is contributed by Mayank Tyagi
+
+</script>
+
+</script>
+</body>
+</html>

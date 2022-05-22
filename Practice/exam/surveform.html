@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+   <style>
+    .head{
+    text-align: left;
+}
+body{
+    background-color: greenyellow;
+}
+.btn{
+    color: blue;
+    background-color: greenyellow;
+    width: 50%;
+}
+h4{
+    margin: 6px;
+}
+
+   </style>
+</head>
+<body>
+  
+        <div class="container">
+        <div class="row">
+            <div style="width: 300px; float: left;">&nbsp;</div>
+            <div class="" style="width: fit-content; float: left;">
+                <h1>Survey Form</h1>
+                  <form id="form">
+                     <h4 class="head">Name</h4>
+                      <input type="text" placeholder="Enter Your Name">
+                      <h4 class="head">Email</h4>
+                      <input type="Email" placeholder="Enter Your Email">
+                      <h4 class="head" >Age</h4>
+                      <input type="text" placeholder="Enter Your age" onblur="checkage(this.value)" required>
+                      <span id="ag"></span>
+                      <h4 class="head">Which option best decribes you</h4>
+                      <select name="" id="">
+                          <option value="">Select one</option>
+                          <option value="">op1</option>
+                          <option value="">op2</option>
+                      </select>
+                      <h4 class="head">Would You recommend this organization to your friend</h4>
+                      <input type="radio" class="radio">
+                      <label for="html">Yes</label><br>
+                      <input type="radio" class="radio">
+                      <label for="css">No</label><br>
+                      <input type="radio" class="radio">
+                      <label for="javascript">Maybe</label>
+                      <h4 class="head">Language and Frameworks Known (Check all that apply)</h4>
+                      <input type="checkbox" class="checkbox">
+                      <label for="c#">C#</label><br>
+                      <input type="checkbox" class="checkbox">
+                      <label for="Java">JAVA</label><br>
+                      <input type="checkbox" class="checkbox">
+                      <label for="javascript">JAVASCRIPT</label><br>
+                      <input type="checkbox" class="checkbox">
+                      <label for="React">REACT</label>
+                  </form>
+                  <h4 class="head">Any Comments Or Suggestion</h4>
+          
+                  <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                  <button class="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+</body>
+<script>
+    function checkage(age){
+        if(age < 18){
+            alert("Age should be gtreater than or equal to 18")
+            document.getElementById('ag').innerText="message"
+        }
+    }
+</script>
+</html>
