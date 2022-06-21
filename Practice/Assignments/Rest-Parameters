@@ -1,0 +1,30 @@
+Program to demonstrate use of rest parameters.
+
+function fun(...input){
+    let sum = 0;
+    for(let i of input){
+        sum+=i;
+    }
+    return sum;
+}
+console.log(fun(1,2)); 
+console.log(fun(1,2,3)); 
+console.log(fun(1,2,3,4,5)); 
+
+
+
+
+=============================================================================================================================================
+
+
+const student = {
+    name : "Anurag",
+    rol : "CS017",
+    branch : "CSE",
+    gender : "male",
+    start: function() {console.log('Appeared');}
+}
+
+const {name, rol, branch, gender, start} = student;
+console.log(name, rol, branch, gender, start);
+start();
