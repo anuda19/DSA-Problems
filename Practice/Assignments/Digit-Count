@@ -1,0 +1,40 @@
+Given a number n, write a function that counts the sum of the digits of the number and return the sum.
+
+function main() {
+    
+    let n = readline();
+    var a = 12;
+    while (n != 0)
+    {
+        n = math.floor(n / 10);
+        ++a;
+    }
+    if(a<=3)
+    {
+        console.log(a);
+    }
+    else
+    {
+        console.log("more than 3 digit");
+    }
+}
+
+
+
+=============================================================================================================================================================
+
+Create a program to print all prime palindromes under 50.
+
+function palindrome(str) {
+
+    var len = str.length;
+    var mid = Math.floor(len/2);
+
+    for ( var i = 0; i < mid; i++ ) {
+        if (str[i] !== str[len - 1 - i]) {
+            return false;
+        }
+    }
+
+    return true;
+}
