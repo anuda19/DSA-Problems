@@ -1,0 +1,53 @@
+ 1. Write a program to multiply the value in the given array and return a result (use array functions)
+Array = [2,3,4,5,6,7,8]
+
+
+var arr = [2, 3, 4, 5, 6, 7, 8];
+ 
+        function multiply() {
+        var pro = 1;
+        for (i = 0; i < arr.length; i++)
+            pro = pro * arr[i];
+        return pro;
+    }
+ 
+    
+       console.log(multiply());
+       
+       
+       
+       
+       
+ ====================================================================================================================================================================================
+ 
+ 
+ 2. Write a JavaScript program to sort by id an array of JavaScript objects.
+      Object =[ {
+      Id: 45,
+      Name: ‘ram’
+      },{
+      Id: 4,
+      Name: ‘raju’
+      },{
+      Id: 90,
+      Name: ‘kumar’
+      }]
+      
+      
+      
+      
+     const object = [
+    {name: 'ram', id: 45},
+    {name: 'raju', id: 4},
+    { name: 'kumar', id: 90},
+    { name: 'sam', id: 10}
+    
+    ];
+    
+    object.sort((firstItem, secondItem) => firstItem.id - secondItem.id);
+    console.log(object);
+      
+      
+      
+      
+      
