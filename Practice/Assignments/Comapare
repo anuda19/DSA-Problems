@@ -1,0 +1,42 @@
+1.Write a function named astroGuru that:
+takes 4 arguments: number of children, spouse’s name, location, job.
+outputs a string to the console that is of the form: ""You will be a `job` in `location`, and married to `spouse` with `no of children` kids.""
+
+
+let guru = function astroGuru(job, location, spouse, kids) {
+    console.log(` you will be a ${job} in ${location} and married to ${spouse} with no of children ${kids}`)
+}
+
+let asGuru = guru("Webdeveloper", "Banglore", "Tanu Sri", "one");
+console.log(asGuru);
+
+
+
+
+
+================================================================================================================================================================================
+
+
+
+2.Write a function that compares two numbers and returns the larger of the two. Bonus: output appropriate messages if the numbers are equal or if they cannot be compared.
+
+function comparison()
+{
+    let num1 = 30;
+    let num2 = 'Anurag';
+    
+    if(num1>num2){
+        console.log(`${num1} is largest`);
+    }
+    else if(num2>num1){
+        console.log(`${num2} is largest`);
+    }
+    else if(num1==num2){
+        console.log("Number is equal");
+    }
+    else if((typeof num1) == 'string' || (typeof num2) == 'string'){
+        console.log("Not comparable");
+    }
+return;
+}
+comparison();
